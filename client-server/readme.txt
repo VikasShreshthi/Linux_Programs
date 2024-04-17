@@ -1,18 +1,18 @@
     server 						client
       |							  |
-    socket()					socket()
+    socket()					        socket()
       |							  |
     bind()						connect()
       |							  |
-    listen()					  |
+    listen()					          |
       |							  |
-    accept()					  |
-      |							  |
-      |							  |
-    read() <------------------  write()
+    accept()					          |
       |							  |
       |							  |
-    wrie() ------------------>  read()
+    read() <------------------------------------------ write()
+      |							  |
+      |							  |
+    wrie() ------------------------------------------> read()
       |							  |
       |							  |
     close()						close()
